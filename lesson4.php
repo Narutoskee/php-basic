@@ -121,5 +121,16 @@ echo $chet;
 echo "<br>";
 echo $nechet;
 
+echo "<br>";
+echo "<br>";
+
+//Сумма чисел от 1 до 100
+
+$sum2 = 0;
+
+for ($num=1; $num <=10; $num++){
+    $sum + $num;
+}
+echo $sum;
 
 
