@@ -75,6 +75,7 @@ do{
 }while($i<$x);
 
 echo "<br>";
+
 //Цикл for
 
 for ($i=0; $i<=100; $i++){
@@ -126,11 +127,10 @@ echo "<br>";
 
 //Сумма чисел от 1 до 100
 
-$sum2 = 0;
 
-for ($num=1; $num <=10; $num++){
-    $sum + $num;
+for ($num=1; $num <=100; $num++){
+    $sum2 +=$num;
 }
-echo $sum;
+echo "Сумма чисел от 1 до 100 равна $sum2";
 
 
