@@ -3,7 +3,7 @@
 $cols = 10;
 $rows = 10;
 $color1 = "#7375FF";
-$color2 = "FFE573";
+$color2 = "#FFE573";
 
 echo "<table border='1' cellspacing='0' cellpadding='3'>";
 
@@ -18,7 +18,7 @@ for ($r=1; $r <= $rows ; $r++) {
         }
         else {
             echo "<td>".$r * $c."</td>";
-        }
+    }
 
     }
     echo "</tr>";
