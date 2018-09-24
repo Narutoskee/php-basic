@@ -1,5 +1,7 @@
 <?php
 
+include 'config.php';
+
 $cols = 10;
 $rows = 10;
 $color1 = "#7375FF";
