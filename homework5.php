@@ -1,17 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Дз.3. Вывод анонса текста</title>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+
+<h1>Программа вывода анонса новости</h1>
+
+<form method='POST' action='homework5.php'>
+    <label>Количество символов анонса</label><br>
+    <input name='sign' type='text' value="" /><br><br>
+    <textarea placeholder="Введите полный текст" rows="10" cols="45" name="text"></textarea><br>
+    <input type='submit' value='Отправить' />
+</form>
+
 <?php
 
-$text = "Vestibulum eu nisi sed erat iaculis tempor. Pellentesque sit amet rutrum ipsum, sed vehicula dolor. Vivamus in tristique nisl. Nullam ac tempus lorem, pretium imperdiet est. Cras facilisis ex lorem, convallis eleifend metus egestas interdum. Sed libero dolor, venenatis ac feugiat id, varius vitae nunc. Sed a orci magna. Fusce maximus porta est eget porttitor. Sed quis lectus nec eros mattis iaculis. Cras ultricies suscipit tortor quis sagittis. Nam dolor libero, faucibus nec diam ac, laoreet viverra eros. Mauris felis ipsum, commodo id purus vitae, rutrum tincidunt libero. Donec vehicula malesuada augue eu vulputate. Mauris tincidunt enim vitae purus laoreet rhoncus. Vestibulum semper aliquam scelerisque. Maecenas sit amet nisi a dui bibendum ultricies.";
+
+
+$text = $_POST ["text"];
+$sign = $_POST ["sign"];
 
 echo "<h3>Исходный текст</h3> <br>". $text;
 
 echo "<br>";
 echo "<br>";
 
-$prev = substr($text, 0, 200);
+$prev = substr($text, 0, $sign);
 
 $anons = substr($prev, 0, strrpos($prev, ' '));
 
 $anons = rtrim($anons, "!,.-");
 
 echo "<h3>Анонс</h3>";
-echo $anons . "<i> Читать далее...</i>";
+echo $anons . "<i>...</i>";
+
+?>
+
+</body>
+
+</html>
