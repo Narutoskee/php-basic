@@ -12,7 +12,7 @@
 <ul>
     <li><a href="/lesson2.php">ДЗ.1. Условия</a></li>
     <li><a href="/homework4.php">ДЗ.2. Таблица умножения</a></li>
-    <li>ДЗ.3. Вывод анонса</li>
+    <li><a href="/homework5.php">ДЗ.3. Вывод анонса</a></li>
 </ul>
 
 
