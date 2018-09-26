@@ -29,9 +29,9 @@ echo "<h3>Исходный текст</h3> <br>". $text;
 echo "<br>";
 echo "<br>";
 
-$prev = substr($text, 0, $sign);
+$prev = mb_substr($text, 0, $sign);
 
-$anons = substr($prev, 0, strrpos($prev, ' '));
+$anons = mb_substr($prev, 0, mb_strrpos($prev, ' '));
 
 $anons = rtrim($anons, "!,.-");
 
