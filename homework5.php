@@ -12,7 +12,7 @@
 
 <form method='POST' action='homework5.php'>
     <label>Количество символов анонса</label><br>
-    <input name='sign' type='text' value="" /><br><br>
+    <input name='sign' type='number' min="1" /><br><br>
     <textarea placeholder="Введите полный текст" rows="10" cols="45" name="text"></textarea><br>
     <input type='submit' value='Отправить' />
 </form>
