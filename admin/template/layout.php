@@ -1,5 +1,7 @@
 <?php
-$user = login($connection, $_GET['name']);
+
+$user = user($connection, $_GET['name']);
+
 ?>
 
 <!doctype html>

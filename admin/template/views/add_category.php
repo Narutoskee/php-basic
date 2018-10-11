@@ -13,7 +13,7 @@
                         <form action="" method="post" enctype="multipart/form-data" class="form-horizontal">
                             <div class="row form-group">
                                 <div class="col col-md-3"><label for="text-input" class=" form-control-label">Название категории</label></div>
-                                <div class="col-12 col-md-9"><input type="text" id="text-input" name="name" placeholder="Введите название категории" class="form-control"></div>
+                                <div class="col-12 col-md-9"><input type="text" id="text-input" name="catname" placeholder="Введите название категории" class="form-control"></div>
                             </div>
                             <div class="card-footer">
                                 <button type="submit" class="btn btn-primary btn-sm">

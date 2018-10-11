@@ -36,7 +36,7 @@
             <div class="login-content">
                 <div class="login-logo">
                     <a href="../../../index.php">
-                        <img class="align-content" src="/admin//images/logo.png" alt="">
+                        <img class="align-content" src="/admin/images/logo.png" alt="">
                     </a>
                 </div>
                 <div class="login-form">

@@ -1,6 +1,5 @@
 <?php
 
-
 function newsAnons($text=""){
     $prev = mb_substr($text, 0, 200);
     $anons = mb_substr($prev, 0, mb_strrpos($prev, ' '));
@@ -41,8 +40,8 @@ function login($connection, $email){
     return $pages = mysqli_fetch_assoc($res);
 }
 
-function user($connection, $id){
-    $sql = "SELECT * from users WHERE id = $id";
+function user($connection, $email){
+    $sql = "SELECT name from users WHERE email = '".$email."'";
     $res = mysqli_query($connection, $sql);
     return $pages = mysqli_fetch_assoc($res);
 }

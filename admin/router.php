@@ -18,6 +18,11 @@ if (!empty($_POST)) {
             $sql = "UPDATE `pages` SET name = '{$_POST['name']}', content = '{$_POST['content']}', active = '{$_POST['active']}' WHERE id = {$_GET['id']}";
             mysqli_query($connection, $sql);
             break;
+        case "add_category";
+            $content = htmlspecialchars($_POST['content']);
+            $sql = "INSERT INTO `category` (`catname`) VALUES ('{$_POST['catname']}')";
+            mysqli_query($connection, $sql);
+            break;
     }
 }
 
