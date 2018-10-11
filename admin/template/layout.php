@@ -1,6 +1,7 @@
 <?php
 
-$user = user($connection, $_GET['name']);
+$email = $_SESSION['post_login']['email'];
+$user = login($connection, $email);
 
 ?>
 

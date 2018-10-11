@@ -14,6 +14,7 @@ if ($_SESSION['is_admin']){
         if ($user){
             if ($user['password'] == md5($_POST['password'])){
                 $_SESSION['is_admin'] = 1;
+                $_SESSION['post_login'] = $_POST;
                 echo '<META HTTP-EQUIV="Refresh" CONTENT="0;URL=http://learnphp-tz.tk/admin/">';
             }
         }

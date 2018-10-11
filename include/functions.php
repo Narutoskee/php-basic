@@ -40,8 +40,8 @@ function login($connection, $email){
     return $pages = mysqli_fetch_assoc($res);
 }
 
-function user($connection, $email){
-    $sql = "SELECT name from users WHERE email = '".$email."'";
+function user($connection){
+    $sql = "SELECT * from users";
     $res = mysqli_query($connection, $sql);
     return $pages = mysqli_fetch_assoc($res);
 }
