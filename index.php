@@ -1,18 +1,13 @@
 <?php
-//подключил проект тест
+
 include_once __DIR__."/config/db.php";
 include_once __DIR__."/include/functions.php";
 
 $pagetype = (explode('/', $_SERVER['REQUEST_URI']))[1];
 
-if($_SERVER['REQUEST_URI']=='/' || !empty($_GET['pagination'])){
+if($pagetype || $_SERVER['REQUEST_URI']=='/' || !empty($_GET['pagination'])){
     $pagetype = 'main';
 }
-
-//echo "<pre>";
-//print_r($_SERVER);
-//echo "</pre>";
-
 
 if ($pagetype=='main'){
     if ($_GET['pagination']){
