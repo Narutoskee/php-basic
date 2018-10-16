@@ -5,23 +5,33 @@ include_once __DIR__."/include/functions.php";
 
 $pagetype = (explode('/', $_SERVER['REQUEST_URI']))[1];
 
-if($pagetype || !empty($_GET['pagination'])){
+if($_SERVER['REQUEST_URI']=='/' || !empty($_GET['pagination'])){
     $pagetype = 'main';
-}else{
-    $pagetype = 'page';
+}
+
+//echo "<pre>";
+//print_r($_SERVER);
+//echo "</pre>";
+
+
+if ($pagetype=='main'){
+    if ($_GET['pagination']){
+        $pages = getList($connection, 10,$_GET['pagination']);
+    }else{
+        $pages = getList($connection);
+    }
+
+    $count = getCountPages($connection);
 }
 
 
+if ($pagetype == 'page'){
+    $id = (explode('/',$_SERVER['REQUEST_URI']))[2];
+    $page = getPage($connection, $id);
+    if (!$page){
+        include '404.php';
+        die();
+    }
+}
 
 include __DIR__."/template/layout.php";
-
-
-//$sql = "SELECT * from pages";
-//
-//$res = mysqli_query($connection, $sql);
-//$pages = mysqli_fetch_all($res, MYSQLI_ASSOC);
-//
-
-
-
-

@@ -1,8 +1,6 @@
 <?php
 
-$page = getPage($connection, $_GET['id'])
-
-
+$page = getPage($connection, $_GET['id']);
 
 ?>
 
