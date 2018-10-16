@@ -1,5 +1,5 @@
 <?php
-
+//подключил проект тест
 include_once __DIR__."/config/db.php";
 include_once __DIR__."/include/functions.php";
 
