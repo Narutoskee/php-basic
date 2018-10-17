@@ -1,7 +1,5 @@
 php_flag display_errors 1
 
-#ErrorDocument 404 /404.php
-
 AddDefaultCharset utf-8
 
 RewriteEngine on
