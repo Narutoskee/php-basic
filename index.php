@@ -3,9 +3,12 @@
 include_once __DIR__."/config/db.php";
 include_once __DIR__."/include/functions.php";
 
-$pagetype = (explode('/', $_SERVER['REQUEST_URI']))[1];
 
-if($pagetype || $_SERVER['REQUEST_URI']=='/' || !empty($_GET['pagination'])){
+$pagetype = (explode('/', $_SERVER['REQUEST_URI']))[1];
+//$pagetype = explode('?', $pagetype)[0];
+print_r($pagetype);
+
+if($_SERVER['REQUEST_URI']=='/' || !empty($_GET['pagination'])){
     $pagetype = 'main';
 }
 
@@ -21,7 +24,7 @@ if ($pagetype=='main'){
 
 
 if ($pagetype == 'page'){
-    $id = (explode('/',$_SERVER['REQUEST_URI']))[2];
+    $id = explode('/', $_SERVER['REQUEST_URI'])[2];
     $page = getPage($connection, $id);
     if (!$page){
         include '404.php';

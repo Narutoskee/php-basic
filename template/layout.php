@@ -2,8 +2,8 @@
 <html>
 <head>
     <title>Personal Blog a Blogging Category Flat Bootstarp  Responsive Website Template | Home :: w3layouts</title>
-    <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
-    <link href="css/style.css" rel='stylesheet' type='text/css' />
+    <link href="/css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <link href="/css/style.css" rel='stylesheet' type='text/css' />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="keywords" content="Personal Blog Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
@@ -17,8 +17,8 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <!--end slider -->
     <!--script-->
-    <script type="text/javascript" src="js/move-top.js"></script>
-    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript" src="/js/move-top.js"></script>
+    <script type="text/javascript" src="/js/easing.js"></script>
     <!--/script-->
     <script type="text/javascript">
         jQuery(document).ready(function($) {
@@ -66,7 +66,7 @@
 </div>
 <!--/header-->
 <?php
-require __DIR__."../views/".$pagetype.".php";
+require __DIR__."/views/".$pagetype.".php";
 ?>
 
 <!---->

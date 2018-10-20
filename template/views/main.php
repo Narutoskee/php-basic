@@ -21,7 +21,7 @@ if ($_GET['pagination']){
                             <div class="post-info">
                                 <h4><a href="single.html"><?=$page['name']?></a>  July 30, 2014 / 27 Comments</h4>
                                 <p><?=newsAnons($page['content'])?></p>
-                                <a href="/page.php?id=<?=$page['id']?>"><span></span>Подробнее</a>
+                                <a href="/page/<?=$page['id']?>"><span></span>Подробнее</a>
                             </div>
                         </div>
                     <?php
