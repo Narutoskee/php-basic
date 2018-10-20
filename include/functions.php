@@ -10,7 +10,6 @@ function newsAnons($text=""){
 function getPage($connection, $id){
     $sql = "SELECT * from pages where id = $id";
     $res = mysqli_query($connection, $sql);
-    //var_dump($sql);
     return $page = mysqli_fetch_assoc($res);
 }
 

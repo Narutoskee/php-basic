@@ -5,8 +5,6 @@ include_once __DIR__."/include/functions.php";
 
 
 $pagetype = (explode('/', $_SERVER['REQUEST_URI']))[1];
-//$pagetype = explode('?', $pagetype)[0];
-print_r($pagetype);
 
 if($_SERVER['REQUEST_URI']=='/' || !empty($_GET['pagination'])){
     $pagetype = 'main';
