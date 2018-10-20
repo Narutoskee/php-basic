@@ -1,15 +1,7 @@
-php_flag display_errors 1
-
-AddDefaultCharset utf-8
-
 RewriteEngine on
-RewriteBase /
-Options +FollowSymLinks
-
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-
-RewriteRule ^(.*)$ index.php [L,NC]
+RewriteRule .* index.php [L]
 
 
 
