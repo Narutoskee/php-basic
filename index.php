@@ -7,7 +7,6 @@ error_reporting(E_ALL);
 include_once __DIR__."/config/db.php";
 include_once __DIR__."/include/functions.php";
 
-
 $pagetype = (explode('/', $_SERVER['REQUEST_URI']))[1];
 
 if($_SERVER['REQUEST_URI']=='/' || !empty($_GET['pagination'])){
@@ -15,7 +14,7 @@ if($_SERVER['REQUEST_URI']=='/' || !empty($_GET['pagination'])){
 }
 
 if ($pagetype=='main'){
-    if ($_GET['pagination']){
+    if (isset($_GET['pagination']) ){
         $pages = getList($connection, 10,$_GET['pagination']);
     }else{
         $pages = getList($connection);

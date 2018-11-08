@@ -1,4 +1,3 @@
-
 <div class="single">
     <div class="container">
         <div class="col-md-8 single-main">

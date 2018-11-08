@@ -66,7 +66,9 @@
 </div>
 <!--/header-->
 <?php
+print_r($pagetype);
 require __DIR__."/views/".$pagetype.".php";
+
 ?>
 
 <!---->
