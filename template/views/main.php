@@ -1,10 +1,10 @@
 <?php
-if ($_GET['pagination']){
-    $pages = getList($connection, 10, $_GET['pagination']);
-}else{
-    $pages = getList($connection);
-}
-   $count = getCountPages($connection);
+//if (isset($_GET['pagination'])){
+//    $pages = getList($connection, 10, $_GET['pagination']);
+//}else{
+//    $pages = getList($connection);
+//}
+//   $count = getCountPages($connection);
 
 ?>
 
